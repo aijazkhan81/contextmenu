@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+.row{
+	margin: 0;
+}
+
+@h: 100%;
+@pink: #f16f8c;
+
+*{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	border-radius: 0 !important;
+	outline: none !important;
+}
+
+.bold{
+	font-weight: 700 !important;
+}
+
+h3,h4,h2{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.tac{
+	text-align: center;
+}
+
+.p0{
+	padding: 0;
+}
+
+.contextlist{
+	width: 200px;
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	top: 150px; 
+	left: 150px;
+
+	li{
+		padding: 5px;
+		background: #ebebeb;
+		border-bottom: 1px solid grey;
+		cursor: pointer;
+
+		&:hover{
+			background: darken(#ebebeb, 7%)
+		}
+	}
+}
+
+body{
+	margin: 20px;
+}
+
+#submenu{
+	width: 200px;
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	top: 150px; 
+	left: 150px;
+
+	li{
+		padding: 5px;
+		background: #ebebeb;
+		border-bottom: 1px solid grey;
+		cursor: pointer;
+
+		&:hover{
+			background: darken(#ebebeb, 7%)
+		}
+	}
+}
+
+.newdropdown{
+	padding: 10px;
+	input{
+		margin: 5px 0;
+		padding: 5px;
+	}
+}
+
+td{
+	border: 1px solid grey;
+	padding: 5px 20px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+// .parented{
+// 	position: absolute;
+// }
+
+.dataentered{
+	background: #ebebeb;
+}
+
+.datatable{
+	margin-bottom: 40px;
+}
+
+.parented *{
+	width: 100%;
+	margin-bottom: 5px;
+	padding: 5px;
+	height: 35px
+}
