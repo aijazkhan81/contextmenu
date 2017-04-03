@@ -17,27 +17,22 @@
 </head>
 <body ng-controller="mainCtrl">
 	<div class="container">
-		<input type="text" ng-model="souls.message">
 		<!-- Parent scope -->
 		<div class="">
-			<div prevent visible="isVisible" ravi="someData" sound="sound(souls)" souls="souls">
-				<p class="haseebtesting">abc</p>
+			<div prevent visible="isVisible" object-data="objectData">
 				<table class="datatable">
 					<tr ng-repeat="t in templateData">
 						<td class="haseebtesting" ng-click="current.selected = t; confusedFunction(t)" id="{{'test ' + $index}}">{{t.templateName}}</td>
 						<td>{{t.templatePath}}</td>
 					</tr>
 				</table> 
-				{{souls}} <br><br>
 
-				<div ng-if="isVisible" class="parented">
-					<div class="btn-group-vertical notclick" role="group" aria-label="Vertical button group"> 
-						<form class="haseebform">
-							<input type="text" ng-model="souls.entername" placeholder="Enter name"> <br>
-							<input type="text" ng-model="souls.entercomment" placeholder="Enter comment">
-							<input type="button" class="btn btn-info" ng-click="addT(souls)" value="Submit">
-						</form>
-					</div> 
+				<div ng-show="isVisible" class="parented">
+					<form class="haseebform">
+						<input type="text" ng-model="objectData.entername" placeholder="Enter name"> <br>
+						<input type="text" ng-model="objectData.entercomment" placeholder="Enter comment">
+						<input type="button" class="btn btn-info" ng-click="addT(objectData)" value="Submit">
+					</form>
 				</div>
 			</div>
 		</div>
